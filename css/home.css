@@ -1,0 +1,128 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+/* Home */
+.home{
+    height: 100vh;
+}
+.home-content{
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+    top: 15vh;
+}
+
+.home-content ul{
+    list-style: none;
+    width: 3860px;
+    position: relative;
+    animation: slider 30s  ease-in-out infinite;
+    display: flex;
+}
+.home-content ul li{
+    position: relative; width: 1400px;}
+.home-content ul li img{width: 100%; height: 490px;}
+
+@keyframes slider{
+    0% , 30%{
+        right: 0;
+    }
+    40% , 70%{
+        right:1283px;
+    }
+    80% , 100%{
+        right: 2568px;
+    }
+}
+@keyframes slider7{
+    0% , 30%{
+        right: 0;
+    }
+    40% , 70%{
+        right:300px;
+    }
+    80% , 100%{
+        right: 600px;
+    }
+}
+@keyframes slider8{
+    0% , 30%{
+        right: 0;
+    }
+    40% , 70%{
+        right:500px;
+    }
+    80% , 100%{
+        right: 1000px;
+    }
+}
+@media screen and (max-width:1000px){
+    .home-content ul{
+        width: 2610px;
+        animation: sliderscreen 30s  ease-in-out infinite;
+    }
+    .home-content ul li{
+        width: 880px;
+    }
+    .home-content ul li img{width: 100%;}
+
+    @keyframes sliderscreen{
+        0% , 30%{
+            right: 0;
+        }
+        40% , 70%{
+            right:868px;
+        }
+        80% , 100%{
+            right: 1736px;
+        }
+    }
+}
+@media screen and (max-width:600px){
+    .home-content ul{
+        width: 1545px;
+        animation: sliderscreen 30s  ease-in-out infinite;
+    }
+    .home-content ul li{
+        width: 515px;
+    }
+    .home-content ul li img{width: 100%;}
+
+    @keyframes sliderscreen{
+        0% , 30%{
+            right: 0;
+        }
+        40% , 70%{
+            right:515px;
+        }
+        80% , 100%{
+            right: 1030px;
+        }
+    }
+}
+@media screen and (max-width:350px){
+    .home-content ul{
+        width: 900px;
+        animation: sliderscn 30s  ease-in-out infinite;
+    }
+    .home-content ul li{
+        width: 295px;
+    }
+    .home-content ul li img{width: 100%;}
+
+    @keyframes sliderscn{
+        0% , 30%{
+            right: 0;
+        }
+        40% , 70%{
+            right:295px;
+        }
+        80% , 100%{
+            right:595px;
+        }
+    }
+}
